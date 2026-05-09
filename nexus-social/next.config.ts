@@ -1,10 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  turbopack: {}, // Adicione esta linha para silenciar o erro do Next.js 16
   webpack: (config, { isServer }) => {
     if (!isServer) {
       config.resolve.fallback = {
-        fs: false, // Diz ao Webpack para ignorar o 'fs' no navegador
+        fs: false,
       };
     }
     return config;
