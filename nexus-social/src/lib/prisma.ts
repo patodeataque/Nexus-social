@@ -1,4 +1,6 @@
-import { PrismaClient } from "@prisma/client";
+// Mude de: import { PrismaClient } from "@prisma/client";
+// Para:
+import { PrismaClient } from "../generated/client";
 
 const prismaClientSingleton = () => {
   return new PrismaClient();
