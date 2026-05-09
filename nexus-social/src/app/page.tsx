@@ -27,7 +27,8 @@ export default async function Home() {
     : null;
 
   return (
-    <div className="max-w-2xl mx-auto space-y-8 pb-20 px-4">
+    /* Adicionado pt-32 para dar espaço ao cabeçalho fixo */
+    <div className="max-w-2xl mx-auto space-y-8 pt-32 pb-20 px-4">
       <CreatePost />
 
       <div className="space-y-6">
