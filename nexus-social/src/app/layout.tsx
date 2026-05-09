@@ -25,16 +25,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="pt-br"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased dark`}
-    >
-      <body className="min-h-full bg-[#0a0a0a] text-white flex flex-col">
+    <html lang="pt-br">
+      {/* Aplique as variáveis aqui para que o CSS as reconheça */}
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Providers>
           <Header />
-          <main className="flex-1 pt-20 px-4">
-            {children}
-          </main>
+          <main>{children}</main>
         </Providers>
       </body>
     </html>
