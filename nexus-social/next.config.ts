@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  optimizeFonts: false,/* Adicione outras opções de config aqui se necessário */
+  // Remova a linha do optimizeFonts: false
 };
 
 export default nextConfig;
